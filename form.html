@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
 </head>
-<body class="page-body">
-  <header class="main-header">
-    <a class="main-header__logo-image">
-      <img src="" width="" height="" alt="Логотип Cat Energy.">
-    </a>
-    <a class="main-header__logo-letter logo-letter">
+<body>
+  <header class="header">
+    <a class="logo logo--letter">
       <img src="" width="" height="" alt="Название Cat Energy.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav_wrapper">
+      <div class="main-nav__wrapper">
         <a class="main-nav__link" href="index.html">Главная</a>
         <a class="main-nav__link" href="catalog.html">Каталог</a>
         <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
       </div>
     </nav>
   </header>
-  <main>
-    <h1 class="form__title">Подбор программы</h1>
-    <p class="form__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="main">
+    <h1 class="main__title">Подбор программы</h1>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="form__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <fieldset class="form__group">
         <legend class="visually-hidden">Данные кота:</legend>
         <label class="form__label">Имя:*
@@ -85,11 +82,11 @@
       <button class="form__button button" type="submit">Записаться</button>
     </form>
   </main>
-  <footer class="main-footer">
-    <a class="main-footer__logo-letter logo-letter">
-      <img src="" width="" height="" alt="Название Cat Energy.">
+  <footer class="footer">
+    <a class="logo logo--letter">
+      <img src="" width="" height="" alt="Логотип Cat Energy.">
     </a>
-    <div class="main-footer__social social">
+    <div class="social">
       <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
         <span class="visually-hidden">Вконтакте.</span>
       </a>
@@ -100,7 +97,7 @@
         <span class="visually-hidden">Телеграм.</span>
       </a>
     </div>
-    <div class="main-footer__copyright copyright">
+    <div class="copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy.</span>

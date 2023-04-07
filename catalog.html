@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
 </head>
-<body class="page-body">
-  <header class="main-header">
-    <a class="main-header__logo-image">
-      <img src="" width="" height="" alt="Логотип Cat Energy.">
-    </a>
-    <a class="main-header__logo-letter logo-letter">
+<body>
+  <header class="header">
+    <a class="logo logo--letter">
       <img src="" width="" height="" alt="Название Cat Energy.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav_wrapper">
+      <div class="main-nav__wrapper">
         <a class="main-nav__link" href="index.html">Главная</a>
         <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог</a>
         <a class="main-nav__link" href="form.html">Подбор программы</a>
       </div>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main">
     <section class="products">
-      <h1 class="products__title">Каталог продукции</h1>
+      <h1 class="main__title">Каталог продукции</h1>
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy PRO 500 грамм со вкусом курицы.">
-          <h2 class="product-card__title">Cat energy pro 500 г</h2>
+          <h3 class="product-card__title">Cat energy pro 500 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -48,7 +45,7 @@
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy PRO 1000 грамм со вкусом курицы.">
-          <h2 class="product-card__title">Cat energy pro 1000 г</h2>
+          <h3 class="product-card__title">Cat energy pro 1000 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -67,7 +64,7 @@
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy PRO 500 грамм со вкусом рыбы.">
-          <h2 class="product-card__title">Cat energy pro 500 г</h2>
+          <h3 class="product-card__title">Cat energy pro 500 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -86,7 +83,7 @@
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy PRO 1000 грамм со вкусом рыбы.">
-          <h2 class="product-card__title">Cat energy pro 1000 г</h2>
+          <h3 class="product-card__title">Cat energy pro 1000 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -105,7 +102,7 @@
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy Slim 500 грамм со вкусом гречки.">
-          <h2 class="product-card__title">Cat energy slim 500 г</h2>
+          <h3 class="product-card__title">Cat energy slim 500 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -124,7 +121,7 @@
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy Slim 1000 грамм со вкусом гречки.">
-          <h2 class="product-card__title">Cat energy slim 1000 г</h2>
+          <h3 class="product-card__title">Cat energy slim 1000 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -143,7 +140,7 @@
       <article class="products__item product-card">
         <a class="product-card__link" href="#">
           <img class="product-card__image" src="" width="" height="" alt="Упаковка Cat Energy Slim 500 грамм со вкусом риса.">
-          <h2 class="product-card__title">Cat energy slim 500 г</h2>
+          <h3 class="product-card__title">Cat energy slim 500 г</h3>
         </a>
         <table class="product-card__feature">
           <tr>
@@ -159,19 +156,17 @@
         </table>
         <a class="product-card__button button" href="#">Заказать</a>
       </article>
-      <a class="products__showmore-icon" href="#">
-        <span class="visually-hidden">Открыть список всех товаров</span>
-        <svg></svg>
-      </a>
-      <a class="products__showmore-letters" href="#">Показать еще 100500 товаров</a>
-      <p class="products__note">На самом деле вкусов гораздо больше!</p>
-      <button class="products__button button button--secondary" type="button">Показать все</button>
+      <article class="product-card">
+        <h3 class="product-card__title">Показать еще 100500 товаров</h3>
+        <p class="product-card__note">На самом деле вкусов гораздо больше!</p>
+        <a class="button button--secondary" href="#">Показать все</a>
+      </article>
     </section>
     <section class="products-add">
-      <h1 class="products-add__title">Дополнительные товары</h1>
+      <h2 class="products-add__title">Дополнительные товары</h2>
       <article class="products-add__item product-add-card">
         <a class="product-add-card__link" href="#">
-          <h2 class="product-add-card__title">Сахарозаменитель</h2>
+          <h3 class="product-add-card__title">Сахарозаменитель</h3>
         </a>
         <table class="product-add-card__feature">
           <tr>
@@ -187,7 +182,7 @@
       </article>
       <article class="products-add__item product-add-card">
         <a class="product-add-card__link" href="#">
-          <h2 class="product-add-card__title">Питьевая вода</h2>
+          <h3 class="product-add-card__title">Питьевая вода</h3>
         </a>
         <table class="product-add-card__feature">
           <tr>
@@ -203,7 +198,7 @@
       </article>
       <article class="products-add__item product-add-card">
         <a class="product-add-card__link" href="#">
-          <h2 class="product-add-card__title">Молоко</h2>
+          <h3 class="product-add-card__title">Молоко</h3>
         </a>
         <table class="product-add-card__feature">
           <tr>
@@ -219,7 +214,7 @@
       </article>
       <article class="products-add__item product-add-card">
         <a class="product-add-card__link" href="#">
-          <h2 class="product-add-card__title">Витамины</h2>
+          <h3 class="product-add-card__title">Витамины</h3>
         </a>
         <table class="product-add-card__feature">
           <tr>
@@ -234,15 +229,15 @@
         <a class="product-add-card__button button" href="#">Заказать</a>
       </article>
     </section>
-    <section class="gift">
+    <div class="gift">
       <p class="gift__slogan">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
+    </div>
   </main>
-  <footer class="main-footer">
-    <a class="main-footer__logo-letter logo-letter">
-      <img src="" width="" height="" alt="Название Cat Energy.">
+  <footer class="footer">
+    <a class="logo logo--letter">
+      <img src="" width="" height="" alt="Логотип Cat Energy.">
     </a>
-    <div class="main-footer__social social">
+    <div class="social">
       <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
         <span class="visually-hidden">Вконтакте.</span>
       </a>
@@ -253,7 +248,7 @@
         <span class="visually-hidden">Телеграм.</span>
       </a>
     </div>
-    <div class="main-footer__copyright copyright">
+    <div class="copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy.</span>
