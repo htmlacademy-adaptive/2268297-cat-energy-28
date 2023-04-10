@@ -7,6 +7,15 @@
   background-color: rgb(144, 141, 129);
 }
 
+.hero__title {
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
 .hero__slogan {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -15,7 +24,7 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  }
+}
 
 .hero__slogan::before {
   position: absolute;

@@ -1,4 +1,5 @@
 .program-card {
+  position: relative;
   background-color: #F2F2F2;
 }
 
@@ -13,9 +14,6 @@
 }
 
 .program-card__description {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 18px;
   color: #444444;
 }
 
@@ -27,4 +25,14 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.program-card__link::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/arrow.svg");
+  width: 32px;
+  height: 10px;
+  left: 100px;
+  bottom: 10px;
 }
