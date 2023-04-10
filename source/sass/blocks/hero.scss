@@ -3,12 +3,13 @@
   color: #ffffff;
   background-image: url("../../img/cat-grey.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: rgb(144, 141, 129);
+  height: 302px;
 }
 
 .hero__title {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -28,7 +29,7 @@
 
 .hero__slogan::before {
   position: absolute;
-  content: "";
+  content: " ";
   top: 0;
   left: 0;
   width: 100%;
