@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  color: #ffffff;
+  background: url("../../img/cat-grey.jpg") no-repeat;
+}
+
+.hero__slogan::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__slogan::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 270px;
+  left: 20px;
+  top: 167px;
+  background-image: url("../../img/pack-cat-energy.png");
+}

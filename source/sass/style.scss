@@ -1,7 +1,10 @@
 //  Базовые стили
 @import "./base/fonts.scss";
-@import "./base/base.scss"
+@import "./base/base.scss";
 
 // Миксины и переменные
 
 // Блоки
+@import "./blocks/main-nav.scss";
+@import "./blocks/main.scss";
+@import "./blocks/hero.scss";
