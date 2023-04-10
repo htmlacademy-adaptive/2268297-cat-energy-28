@@ -1,8 +1,21 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background: url("../../img/cat-grey.jpg") no-repeat;
+  background-image: url("../../img/cat-grey.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(144, 141, 129);
 }
+
+.hero__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  }
 
 .hero__slogan::before {
   position: absolute;
