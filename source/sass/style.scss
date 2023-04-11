@@ -5,10 +5,12 @@
 // Миксины и переменные
 
 // Блоки
+@import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/program-card.scss";
+@import "./blocks/programs.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
 @import "./blocks/contacts.scss";
@@ -18,4 +20,6 @@
 @import "./blocks/button.scss";
 @import "./blocks/products-add.scss";
 @import "./blocks/product-add-card.scss";
-@import "./blocks/gift.scss"
+@import "./blocks/gift.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";
