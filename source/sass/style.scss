@@ -3,6 +3,8 @@
 @import "./base/base.scss";
 
 // Миксины и переменные
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
 // Блоки
 @import "./blocks/header.scss";
@@ -23,3 +25,4 @@
 @import "./blocks/gift.scss";
 @import "./blocks/form.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/container.scss";
