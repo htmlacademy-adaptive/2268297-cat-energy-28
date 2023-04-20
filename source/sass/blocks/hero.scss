@@ -16,6 +16,10 @@
     text-align: start;
     min-height: 810px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 553px;
+  }
 }
 
 .hero__title {
@@ -33,6 +37,11 @@
     line-height: 60px;
     color: #000000;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+    margin-top: 73px;
   }
 }
 
@@ -52,6 +61,10 @@
     line-height: 20px;
     color: #000000;
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
   }
 }
 
@@ -76,8 +89,8 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    left: 558px;
-    top: 141px;
+    left: 470px;
+    top: 0;
     }
   }
 
