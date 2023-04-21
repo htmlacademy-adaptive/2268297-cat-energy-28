@@ -19,7 +19,7 @@
   padding-bottom: 24px;
 
   @media (max-width: $tablet-width) {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
-    border-bottom: 2px solid #68B738;
+    border-bottom: 2px solid #68b738;
   }
 
   /* @media (min-width: $desktop-width) {
@@ -51,11 +51,6 @@
     flex-direction: row;
     gap: 20px;
   }
-
-  @media (min-width: $desktop-width) {
-
-    }
-
 }
 
 .main-nav__toggle {
@@ -78,7 +73,6 @@
   background-image: url("../../img/burger-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .main-nav--opened .main-nav__toggle {
