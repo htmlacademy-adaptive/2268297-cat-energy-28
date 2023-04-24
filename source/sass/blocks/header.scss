@@ -5,8 +5,11 @@
   align-content: center;
   min-height: 65px;
   position: relative;
+  padding: 10px 20px;
 
   @media (min-width: $desktop-width) {
-    min-height: 140px;
+    min-height: 120px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

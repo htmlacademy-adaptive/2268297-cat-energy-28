@@ -1,8 +1,6 @@
 .example {
   background-color: #eaeaea;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 40px;
+  padding: 15px 20px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -10,10 +8,14 @@
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     grid-template-columns: 1fr 1fr 45%;
+    padding-left: 31px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 65%;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 

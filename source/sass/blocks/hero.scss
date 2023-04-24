@@ -1,17 +1,15 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background: url("../../img/cat-grey.jpg");
+  background: url("../img/cat-grey.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 120%;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 87px;
-    padding-right: 60px;
+    padding-left: 121px;
+    padding-right: 30px;
     background-image: none;
     text-align: start;
     min-height: 810px;
@@ -19,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 553px;
+    padding-left: 190px;
   }
 }
 
@@ -75,7 +74,7 @@
   height: 270px;
   left: 40px;
   top: 167px;
-  background-image: url("../../img/pack-cat-energy.png");
+  background-image: url("../img/pack-cat-energy.png");
   background-repeat: no-repeat;
   background-size: contain;
 
