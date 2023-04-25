@@ -6,8 +6,12 @@
   position: relative;
   padding: 12px 20px 18px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 31px;
+  }
+
   @media (min-width: $desktop-width) {
-    min-height: 120px;
     padding-left: 110px;
     padding-right: 110px;
   }
