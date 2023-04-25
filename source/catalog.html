@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,7 +12,7 @@
         <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -26,8 +27,10 @@
       <section class="products">
         <h1 class="products__title">Каталог продукции</h1>
         <article class="product-card">
-          <a class="product-card__link" href="#">
+          <a class="product-card__link product-card__link--image" href="#">
             <img class="product-card__image" src="img/catalog/cat-energy-pro-500-chicken.png" width="68" height="86" alt="Упаковка Cat Energy PRO 500 грамм со вкусом курицы.">
+          </a>
+          <a class="product-card__link product-card__link--title" href="#">
             <h3 class="product-card__title">Cat energy pro 500 г</h3>
           </a>
           <table class="product-card__feature">
@@ -236,10 +239,10 @@
       </div>
     </main>
     <footer class="footer">
-      <a class="logo logo--letter">
+      <a class="logo logo--letter footer__item">
         <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
       </a>
-      <div class="social">
+      <div class="social footer__item">
         <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте.</span>
           <svg aria-hidden="true" focusable="false" width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +262,7 @@
           </svg>
         </a>
       </div>
-      <div class="copyright">
+      <div class="copyright footer__item">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Логотип HTML Academy.</span>
@@ -269,5 +272,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
