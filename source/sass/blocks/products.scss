@@ -2,12 +2,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 60px;
+    justify-content: space-between;
     row-gap: 141px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 110px 25px;
   }
 }
+
 .products__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -23,8 +27,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 22px;
+    margin-top: 12px;
+    margin-bottom: 22px;
     font-size: 60px;
+    width: 100%;
+    padding: 0;
   }
 
+  @media (min-width: $desktop-width) {
+
+  }
 }
