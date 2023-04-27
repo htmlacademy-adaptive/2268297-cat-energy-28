@@ -9,11 +9,10 @@
   color: #ffffff;
   background-color: #68b738;
   padding: 10px;
-  display: block;
   grid-area: button;
 
   @media (min-width: $tablet-width) {
-    max-width: 244px;
+
   }
 }
 

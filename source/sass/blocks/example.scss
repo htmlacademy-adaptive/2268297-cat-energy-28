@@ -1,4 +1,5 @@
 .example {
+  position: relative;
   background-color: #eaeaea;
   padding: 15px 20px 40px;
   display: grid;
@@ -19,6 +20,23 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .example::after {
+    position: absolute;
+    content: "";
+    background-color: #eaeaea;
+    width: 100%;
+    height: 43%;
+    bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example::after {
+    height: 69%;
+    z-index: 0;
+  }
+}
 .example__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -54,6 +72,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
+    z-index: 3;
   }
 }
 
@@ -63,23 +82,28 @@
   flex-direction: column-reverse;
   justify-self: center;
   gap: 9px;
-  max-width: 124px;
+  min-width: 124px;
 
   @media (min-width: $tablet-width) {
-    min-width: 162px;
     justify-self: flex-start;
+    min-width: 162px;
+    z-index: 2;
   }
 }
 
 .example__list::after {
   position: absolute;
   content: "";
-  left: 0%;
-  right: 0%;
+  left: 0;
+  right: 0;
   top: -20%;
   bottom: 10%;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .example__number {
@@ -104,23 +128,33 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin-right: 36px;
-  margin-left: 36px;
+  background-color: #eaeaea;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 19px;
+  margin-left: 18px;
+  align-self: center;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
 .example__slider {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   grid-column: 1 / 3;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,12 +178,13 @@
     grid-column: 3 / 4;
     font-size: 20px;
     text-align: end;
-    padding-left: 160px;
+    margin-left: 130px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
     text-align: start;
     padding: 0;
+    z-index: 2;
   }
 }
