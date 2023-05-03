@@ -2,17 +2,19 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
-  padding: 10px;
+  padding: 11px;
   grid-area: button;
 
   @media (min-width: $tablet-width) {
-
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 28px;
   }
 }
 

@@ -4,11 +4,13 @@
   justify-content: space-between;
   align-content: center;
   position: relative;
-  padding: 12px 20px 18px;
+  padding: 10px 20px 13px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-left: 30px;
     padding-right: 31px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
