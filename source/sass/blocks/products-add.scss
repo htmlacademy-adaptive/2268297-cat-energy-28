@@ -6,6 +6,10 @@
     padding: 48px 31px 76px;
   }
 
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 80px;
+  }
 }
 .products-add__title {
   font-family: "Oswald", "Arial", sans-serif;

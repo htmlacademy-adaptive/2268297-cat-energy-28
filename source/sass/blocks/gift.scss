@@ -1,16 +1,32 @@
 .gift {
   position: relative;
-  background-image: url("../img/cat-bag.jpg");
+  background-image: url("../img/cat-bag-mobile.jpg");
   background-color: rgb(172, 164, 164);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-top: 35px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-bag-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-bag-tablet.jpg");
     margin-top: 69px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bag-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cat-bag-desktop.jpg");
+    grid-column: 2 / 3;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bag-desktop@2x.jpg");
+    }
   }
 }
 
