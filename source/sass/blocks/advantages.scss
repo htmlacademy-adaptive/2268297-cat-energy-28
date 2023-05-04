@@ -49,89 +49,88 @@
 }
 
 .advantages__item::before {
-    position: absolute;
-    content: counter(item);
-    font-size: 280px;
-}
-
-.advantages__item::after {
   position: absolute;
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #68b738;
-  top: -2px;
   left: 0;
-  z-index: -1;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
+    left: 0px;
     top: 30px;
   }
 }
 
 .advantages__item--healthy::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/leaf.svg");
+  background: url("../img/leaf.svg"), #68b738;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 25px;
-  height: 28px;
-  left: 18px;
-  top: 14px;
-
-  @media (min-width: $tablet-width) {
-    left: 26px;
-    top: 58px;
-  }
 }
 
 .advantages__item--powder::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/glass.svg");
+  background: url("../img/glass.svg"), #68b738;
   background-repeat: no-repeat;
-  width: 26px;
-  height: 28px;
-  left: 18px;
-  top: 14px;
-
-  @media (min-width: $tablet-width) {
-    left: 28px;
-    top: 57px;
-  }
+  background-position: center;
 }
 
 .advantages__item--meal::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/tableware.svg");
+  background: url("../img/tableware.svg"), #68b738;
   background-repeat: no-repeat;
-  width: 25px;
-  height: 30px;
-  left: 18px;
-  top: 14px;
-
-  @media (min-width: $tablet-width) {
-    left: 28px;
-    top: 56px;
-  }
+  background-position: center;
 }
 
 .advantages__item--month::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/clock.svg");
+  background: url("../img/clock.svg"), #68b738;
   background-repeat: no-repeat;
-  width: 26px;
-  height: 31px;
-  left: 18px;
-  top: 14px;
+  background-position: center;
+}
+
+.advantages__item::after {
 
   @media (min-width: $tablet-width) {
-    left: 28px;
-    top: 56px;
+    position: absolute;
+    content: counter(item);
+    font-size: 280px;
+    color: #f2f2f2;
+    font-family: 'Oswald';
+    font-size: 280px;
+    line-height: 100%;
+    z-index: -1;
+  }
+}
+
+.advantages__item--healthy::after {
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    right: 26px;
+  }
+}
+
+.advantages__item--powder::after {
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    right: 6px;
+  }
+}
+
+.advantages__item--meal::after {
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    right: 4px;
+  }
+}
+
+.advantages__item--month::after {
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    right: 2px;
   }
 }
 
