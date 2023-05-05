@@ -10,6 +10,12 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 48px;
+  }
 }
 
 .footer__item {

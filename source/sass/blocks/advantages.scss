@@ -10,7 +10,8 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 106px;
+    padding-top: 38px;
   }
 }
 
@@ -151,6 +152,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 94px;
+    gap: 74px;
   }
 }

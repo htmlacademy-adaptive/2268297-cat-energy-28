@@ -32,6 +32,13 @@
     right: 91px;
     top: 82px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    left: 66px;
+    top: 42px;
+  }
 }
 
 .program-card--pro::before {
@@ -53,6 +60,14 @@
     right: 27px;
     top: 134px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    left: 32px;
+    right: 0;
+    top: 68px;
+  }
 }
 
 .program-card::after {
@@ -72,6 +87,13 @@
     left: auto;
     right: 62px;
     top: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 48px;
   }
 }
 
@@ -95,6 +117,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
+    margin-bottom: 70px;
   }
 }
 
@@ -116,6 +139,8 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding-bottom: 0;
+    margin-bottom: 27px;
   }
 }
 

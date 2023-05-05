@@ -32,19 +32,20 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 16px;
-    padding-bottom: 14px;
+    padding-bottom: 6px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  /* @media (min-width: $desktop-width) {
     color: #ffffff;
-  } */
+  }
 }
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }
 

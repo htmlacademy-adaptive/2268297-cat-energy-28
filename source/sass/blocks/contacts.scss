@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     column-gap: 296px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .contacts__header {
