@@ -9,16 +9,19 @@
   <body>
     <header class="header">
       <a class="logo">
-        <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy.">
-        <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <a class="main-nav__link" href="index.html">Главная</a>
-          <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           <a class="main-nav__link" href="form.html">Подбор программы</a>
         </div>
       </nav>
