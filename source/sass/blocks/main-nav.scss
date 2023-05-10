@@ -35,17 +35,23 @@
     padding-bottom: 6px;
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
   }
 }
+
+.main-nav__link--index {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+
+}
+
+.main-nav__link--current.main-nav__link--index {
+  border-bottom: 2px solid #ffffff;
+  }
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid #ffffff;
   }
 }
 
