@@ -46,17 +46,17 @@
           <legend class="visually-hidden">Программа</legend>
           <label class="form__label form__label--radio">
             <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-loss" checked>
-            <span class="form__control--radio"></span>
+            <span class="form__control form__control--radio"></span>
             <span class="form__name">Похудение</span>
           </label>
           <label class="form__label form__label--radio">
             <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-gain">
-            <span class="form__control--radio"></span>
+            <span class="form__control form__control--radio"></span>
             <span class="form__name">Набор массы</span>
           </label>
           <label class="form__label form__label--radio">
             <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="unknown">
-            <span class="form__control--radio"></span>
+            <span class="form__control form__control--radio"></span>
             <span class="form__name">Не знаю (нужен ваш совет)</span>
           </label>
         </fieldset>
@@ -69,60 +69,62 @@
             <input class="form__input form__input--contacts" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__legend">Комментарий</legend>
-          <input class="form__input" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+        <fieldset class="form__group ">
+          <legend class="form__legend form__legend--comments">Комментарий</legend>
+          <input class="form__input form__input--comments" type="textarea" name="comment" placeholder="Расскажите обо всех повадках кота">
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__legend">Дополнительно</legend>
+        <fieldset class="form__group form__group--add">
+          <legend class="form__legend form__legend--add">Дополнительно</legend>
           <label class="form__label">
-            <input class="form__input" type="checkbox" name="sweetener" checked>Сахарозаменитель
+            <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
+            <span class="form__control form__control--checkbox"></span>
+            <span class="form__name">Сахарозаменитель</span>
           </label>
           <label class="form__label">
-            <input class="form__input" type="checkbox" name="water">Питьевая вода
+            <input class="form__input visually-hidden" type="checkbox" name="water">
+            <span class="form__control form__control--checkbox"></span>
+            <span class="form__name">Питьевая вода</span>
           </label>
           <label class="form__label">
-            <input class="form__input" type="checkbox" name="milk">Молоко
+            <input class="form__input visually-hidden" type="checkbox" name="milk">
+            <span class="form__control form__control--checkbox"></span>
+            <span class="form__name">Молоко</span>
           </label>
           <label class="form__label">
-            <input class="form__input" type="checkbox" name="vitamins">Витамины
+            <input class="form__input visually-hidden" type="checkbox" name="vitamins">
+            <span class="form__control form__control--checkbox"></span>
+            <span class="form__name">Витамины</span>
           </label>
         </fieldset>
-        <button class="button" type="submit">Отправить заявку</button>
+        <button class="button button--form" type="submit">Отправить заявку</button>
+        <p class="form__footnote">
+            * — Обязательные поля
+        </p>
       </form>
+      <section class="contacts">
+        <div class="contacts__header">
+          <h2 class="contacts__title">Приглашаем к&nbspсотрудничеству дилеров!</h2>
+          <address class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037915710024!2d30.318176492393334!3d59.938716410235855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681976515788!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Офис компании по адресу улица Большая Конюшенная, дом 19/8 Санкт-Петербург">
+        </iframe>
+      </section>
     </main>
     <footer class="footer">
-      <a class="logo logo--footer footer__item">
-        <img src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
+      <a class="logo footer__item">
+        <img class="logo--footer" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
       </a>
       <div class="social footer__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте.</span>
-          <svg aria-hidden="true" focusable="false" width="28" height="17" fill="none">
-            <use href="img/sprite.svg#icon-vk"></use>
-          </svg>
-        </a>
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Ютуб.</span>
-          <svg aria-hidden="true" focusable="false" width="25" height="19" fill="none">
-            <use href="img/sprite.svg#icon-youtube"></use>
-          </svg>
-        </a>
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм.</span>
-          <svg aria-hidden="true" focusable="false" width="21" height="18" fill="none">
-            <use href="img/sprite.svg#icon-tg"></use>
-          </svg>
-        </a>
+        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка на Vkontakte"></a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"  aria-label="Ссылка на Youtube"></a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Ссылка на Telegram"></a>
       </div>
       <div class="copyright footer__item">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип HTML Academy.</span>
-          <svg class="copyright__logo" aria-hidden="true" focusable="false" width="27" height="34" fill="none">
-            <use href="img/sprite.svg#icon-academy"></use>
-          </svg>
-        </a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a>
       </div>
     </footer>
     <script src="js/script.js"></script>
