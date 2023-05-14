@@ -35,4 +35,9 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
+
+  @media(min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+  }
 }

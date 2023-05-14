@@ -60,8 +60,8 @@
             <span class="form__name">Не знаю (нужен ваш совет)</span>
           </label>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__group form__group--contacts">
+          <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
           <label class="form__label form__label--contacts">E-mail:*
             <input class="form__input form__input--contacts" type="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
           </label>
@@ -69,41 +69,43 @@
             <input class="form__input form__input--contacts" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
-        <fieldset class="form__group ">
+        <fieldset class="form__group form__group--comments">
           <legend class="form__legend form__legend--comments">Комментарий</legend>
           <input class="form__input form__input--comments" type="textarea" name="comment" placeholder="Расскажите обо всех повадках кота">
         </fieldset>
         <fieldset class="form__group form__group--add">
           <legend class="form__legend form__legend--add">Дополнительно</legend>
-          <label class="form__label">
-            <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
-            <span class="form__control form__control--checkbox"></span>
-            <span class="form__name">Сахарозаменитель</span>
-          </label>
-          <label class="form__label">
-            <input class="form__input visually-hidden" type="checkbox" name="water">
-            <span class="form__control form__control--checkbox"></span>
-            <span class="form__name">Питьевая вода</span>
-          </label>
-          <label class="form__label">
-            <input class="form__input visually-hidden" type="checkbox" name="milk">
-            <span class="form__control form__control--checkbox"></span>
-            <span class="form__name">Молоко</span>
-          </label>
-          <label class="form__label">
-            <input class="form__input visually-hidden" type="checkbox" name="vitamins">
-            <span class="form__control form__control--checkbox"></span>
-            <span class="form__name">Витамины</span>
-          </label>
-        </fieldset>
-        <button class="button button--form" type="submit">Отправить заявку</button>
-        <p class="form__footnote">
+          <div class="form__wrapper">
+            <label class="form__label">
+              <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="form__control form__control--checkbox"></span>
+              <span class="form__name">Сахарозаменитель</span>
+            </label>
+            <label class="form__label">
+              <input class="form__input visually-hidden" type="checkbox" name="water">
+              <span class="form__control form__control--checkbox"></span>
+              <span class="form__name">Питьевая вода</span>
+            </label>
+            <label class="form__label">
+              <input class="form__input visually-hidden" type="checkbox" name="milk">
+              <span class="form__control form__control--checkbox"></span>
+              <span class="form__name">Молоко</span>
+            </label>
+            <label class="form__label">
+              <input class="form__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="form__control form__control--checkbox"></span>
+              <span class="form__name">Витамины</span>
+            </label>
+          </div>
+          <button class="button button--form" type="submit">Отправить заявку</button>
+          <p class="form__footnote">
             * — Обязательные поля
-        </p>
+          </p>
+        </fieldset>
       </form>
       <section class="contacts">
         <div class="contacts__header">
-          <h2 class="contacts__title">Приглашаем к&nbspсотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="contacts__address">
             <span>ул. Большая Конюшенная, д. 19/8</span>
             <span>Санкт-Петербург</span>
