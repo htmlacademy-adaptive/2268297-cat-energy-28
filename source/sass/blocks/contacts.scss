@@ -85,3 +85,11 @@
   background-color: #77f4b6;
   width: 100%;
 }
+
+.contacts::after {
+  position: absolute;
+  content: "";
+  width: 57px;
+  height: 53px;
+  background-image: url("../img/sprite.svg#map-pin");
+}
