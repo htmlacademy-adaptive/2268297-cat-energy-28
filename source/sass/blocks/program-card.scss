@@ -115,6 +115,7 @@
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,6 +144,7 @@
     width: auto;
     padding-bottom: 0;
     margin-bottom: 27px;
+    padding-top: 4px;
   }
 }
 
@@ -167,28 +169,23 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../img/sprite.svg#arrow");
+    mask: url("../img/sprite.svg#arrow");
+    background-color: #000000;
     width: 24px;
     height: 12px;
     top: 6px;
-    right: -50px;
+    right: -40px;
 
     @media (min-width: $tablet-width) {
       top: 8px;
-      right: -58px;
+      right: -50px;
     }
   }
 }
 
 .program-card__link:hover {
   &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/sprite.svg#arrow");
     width: 32px;
-    height: 10px;
-    top: 6px;
-    right: -50px;
   }
 }
 
