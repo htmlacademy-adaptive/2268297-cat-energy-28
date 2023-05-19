@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -31,9 +32,12 @@
   width: 100%;
   text-align: center;
   line-height: 100%;
+  max-width: $max-width-mobile;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

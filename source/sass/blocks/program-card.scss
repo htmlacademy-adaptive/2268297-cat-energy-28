@@ -16,7 +16,7 @@
 .program-card--slim::before {
   position: absolute;
   content: "";
-  background-image: url("../img/sprite.svg#cat-sitting");
+  background-image: url("../img/stack.svg#cat-sitting");
   background-repeat: no-repeat;
   background-size: 36px 50px;
   width: 50px;
@@ -45,7 +45,7 @@
 .program-card--pro::before {
   position: absolute;
   content: "";
-  background-image: url("../img/sprite.svg#cat-walking");
+  background-image: url("../img/stack.svg#cat-walking");
   background-repeat: no-repeat;
   background-size: 67px 28px;
   width: 67px;
@@ -159,6 +159,7 @@
   color: #000000;
   margin-top: 8px;
   margin-bottom: 18px;
+  margin-right: 60px;
 
 
   @media (min-width: $tablet-width) {
@@ -169,11 +170,11 @@
   &::after {
     position: absolute;
     content: "";
-    mask: url("../img/sprite.svg#arrow");
+    mask: url("../img/stack.svg#arrow");
     background-color: #000000;
     width: 24px;
     height: 12px;
-    top: 6px;
+    bottom: 6px;
     right: -40px;
 
     @media (min-width: $tablet-width) {
@@ -186,6 +187,9 @@
 .program-card__link:hover {
   &::after {
     width: 32px;
+    height: 14px;
+    top: 7px;
+    right: -56px;
   }
 }
 

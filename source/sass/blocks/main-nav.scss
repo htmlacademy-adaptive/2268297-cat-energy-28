@@ -19,7 +19,7 @@
   padding-bottom: 24px;
 
   @media (max-width: 767px) {
-    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
@@ -38,6 +38,11 @@
   }
 }
 
+.main-nav__link:first-child {
+  @media (max-width: 767px) {
+    border-top: 1px solid #e6e6e6;
+  }
+}
 .main-nav__link--index {
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -71,10 +76,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     gap: 36px;
+    max-width: 60vw;
   }
 }
 
@@ -105,14 +113,14 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  background-image: url("../img/sprite.svg#burger-menu");
+  background-image: url("../img/stack.svg#burger-menu");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 18px;
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../img/sprite.svg#close");
+  background-image: url("../img/stack.svg#close");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -126,7 +134,7 @@
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    z-index: 5;
+    z-index: 7;
     top: 64px;
     right: 0;
   }

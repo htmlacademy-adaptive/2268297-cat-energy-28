@@ -1,19 +1,20 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background-image: url("../img/cat-mobile.jpg"), linear-gradient(#07b607 80%, #ffffff 20%);
-  background-size: contain;
+  background-image: url("../img/cat-mobile.jpg");
+  background-size: 320px 302px;
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
+  max-width: $max-width-mobile;
+  margin: 0 auto;
 
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cat-mobile@2x.jpg"), linear-gradient(#68b738 60%, #ffffff 40%);
-    background-size: 100%;
+    background-image: url("../img/cat-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
@@ -25,6 +26,7 @@
     text-align: start;
     min-height: 810px;
     display: block;
+    max-width: $max-width-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,23 +34,10 @@
     padding-bottom: 262px;
     padding-top: 71px;
     min-height: auto;
-
+    max-width: $max-width-desktop;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .hero::after {
-    position: absolute;
-    content: "";
-    width: 720px;
-    height: 694px;
-    background-image: url("../img/cat-desktop.jpg"), linear-gradient(#68b738 80%, #ffffff 20%);
-    background-repeat: no-repeat;
-    top: -130px;
-    right: 0;
-    z-index: -2;
-  }
-}
 
 .hero__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -59,6 +48,7 @@
   color: #ffffff;
   margin-top: 17px;
   margin-bottom: 20px;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -85,6 +75,7 @@
   color: #ffffff;
   margin-top: 5px;
   margin-bottom: 302px;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -142,5 +133,21 @@
       background-image: url("../img/pack-desktop@2x.png");
       background-size: 100%;
     }
+  }
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  width: 200%;
+  background-color: #62a53b;
+  height: 302px;
+  right: 0;
+  left: -50%;
+  top: 0;
+  z-index: -1;
+
+  @media (min-width:$tablet-width) {
+    display: none;
   }
 }

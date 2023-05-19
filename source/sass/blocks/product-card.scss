@@ -10,11 +10,14 @@
   justify-content: center;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  max-width: $max-width-mobile;
+  margin: 0 auto;;
 
   @media (min-width: $tablet-width) {
     border: none;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 162px 36px 38px;
     background-color: #f2f2f2;
     box-sizing: border-box;
@@ -46,14 +49,14 @@
     padding-left: 47px;
     padding-right: 47px;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 105%;
     padding-left: 12px;
     padding-right: 6px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 }
 
@@ -69,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 310px;
+    bottom: 314px;
   }
 }
 
@@ -88,6 +91,10 @@
   tbody {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      justify-content: baseline;
+    }
   }
 
   tr {
@@ -96,24 +103,35 @@
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      gap: 16px;
+      width: 50%;
     }
   }
 
   td {
     text-align: end;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #CDCDCD;
+      padding-bottom: 9px;
+      padding-top: 7px;
+    }
   }
 
   th {
     text-align: start;
     font-weight: 400;
     padding: 0;
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #CDCDCD;
+      padding-bottom: 9px;
+      padding-top: 7px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
   }
 }
 
@@ -127,7 +145,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 83px;
+    margin-bottom: 84px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -137,7 +155,7 @@
     padding-right: 0;
     margin-right: -1px;
     margin-left: -2px;
-    margin-bottom: 89px;;
+    margin-bottom: 86px;;
   }
 }
 
