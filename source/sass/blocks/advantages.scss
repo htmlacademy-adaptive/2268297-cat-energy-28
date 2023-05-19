@@ -1,17 +1,35 @@
 .advantages {
-  padding: 10px 21px 25px;
+  padding: 10px 21px 27px;
+  max-width: $max-width-mobile;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 31px;
     padding-right: 30px;
     padding-bottom: 18px;
-    border-bottom: 1px solid #e6e6e6;
+    max-width: $max-width-tablet;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 106px;
     padding-top: 38px;
+    max-width: $max-width-desktop;
+  }
+}
+
+.advantages::after {
+  @media(min-width:$tablet-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media(min-width:$desktop-width) {
+    display: none;
   }
 }
 
@@ -29,6 +47,7 @@
     font-size: 60px;
     line-height: 100%;
     margin-top: 24px;
+    margin-bottom: 44px;;
   }
 }
 
@@ -46,6 +65,10 @@
     padding-left: 0;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 139px;
   }
 }
 
@@ -66,28 +89,28 @@
 }
 
 .advantages__item--healthy::before {
-  background: url("../img/sprite.svg#leaf"), #68b738;
+  background: url("../img/stack.svg#leaf"), #68b738;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px 28px;
 }
 
 .advantages__item--powder::before {
-  background: url("../img/sprite.svg#glass"), #68b738;
+  background: url("../img/stack.svg#glass"), #68b738;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 26px 29px;
 }
 
 .advantages__item--meal::before {
-  background: url("../img/sprite.svg#tableware"), #68b738;
+  background: url("../img/stack.svg#tableware"), #68b738;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px 30px;
 }
 
 .advantages__item--month::before {
-  background: url("../img/sprite.svg#clock"), #68b738;
+  background: url("../img/stack.svg#clock"), #68b738;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 26px 31px;

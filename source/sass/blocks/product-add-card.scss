@@ -1,5 +1,5 @@
 .product-add-card {
-  padding-top: 7px;
+  padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid #cdcdcd;
   display: flex;
@@ -17,10 +17,15 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: "title feature button";
+    grid-template-columns: 321px 329px auto;
     min-width: 895px;
-    padding: 15px 0 17px;
+    padding: 0;
+    align-items: baseline;
+    grid-template-areas: "title feature button";
+    grid-template-columns: 321px 329px auto;
+    align-items: center;
   }
 }
 
@@ -36,8 +41,8 @@
   line-height: 100%;
   text-transform: uppercase;
   color: #222222;
-  margin-top: 6px;
-  margin-bottom: 13px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -45,7 +50,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom:0;
   }
 }
 
@@ -53,7 +59,7 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   tr {
     display: flex;
@@ -63,12 +69,19 @@
       justify-content: flex-end;
       gap: 49px;
     }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 78px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 125%;
     grid-area: feature;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,3 +1,9 @@
+.copyright {
+  @media(min-width:$tablet-width) {
+    padding-top: 18px;
+  }
+}
+
 .copyright__link {
   font-family: inherit;
   font-size: 16px;
@@ -12,9 +18,21 @@
   &::after {
     display: inline-block;
     content: "";
-    mask: url("../img/sprite.svg#icon-academy");
+    mask: url("../img/stack.svg#html-academy");
     background-color: #666666;
     width: 27px;
     height: 34px;
   }
 }
+
+.copyright__link:hover,
+.copyright__link:focus {
+  &::after {
+  background-color: #68B738;
+  }
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+

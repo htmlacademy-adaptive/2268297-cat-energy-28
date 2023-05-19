@@ -1,45 +1,54 @@
 .example {
   position: relative;
   background-color: #eaeaea;
-  padding: 17px 21px 20px;
+  padding: 16px 21px 35px;
   display: grid;
   row-gap: 20px;
   column-gap: 32px;
+  max-width: $max-width-mobile;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     padding-left: 31px;
     padding-right: 30px;
     padding-top: 34px;
+    padding-bottom: 0;
     column-gap: 42px;
     row-gap: 53px;
+    grid-template-columns: 1fr 1fr auto;
+    max-width: $max-width-tablet;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
-    padding-top: 12px;
-    padding-bottom: 68px;
-    grid-template-columns: 1fr;
+    padding-top: 24px;
+    padding-bottom: 70px;
+    grid-template-columns: 162px 162px 1fr;
+    max-width: $max-width-desktop;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .example::after {
+.example::before {
     position: absolute;
-    content: "";
+    content: " ";
     background-color: #eaeaea;
-    width: 100%;
-    height: 43%;
-    bottom: 0;
-  }
-}
+    width: 200%;
+    height: 100%;
+    z-index: -1;
+    right: 0;
+    left: -50%;
 
-@media (min-width: $desktop-width) {
-  .example::after {
-    height: 69%;
-    z-index: 0;
-  }
+    @media(min-width:$tablet-width) {
+      height: 462px;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    @media(min-width:$desktop-width) {
+      background-color: #f2f2f2;
+    }
 }
 
 .example__title {
@@ -61,6 +70,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
+    margin-top: 0;
+    margin-bottom: 92px;
   }
 }
 
@@ -68,7 +79,7 @@
   color: #444444;
   margin-top: 10px;
   grid-column: 1 / 3;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 0;
 
 
@@ -82,7 +93,9 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
     z-index: 3;
-    margin-top: 84px;
+    margin-top: 0px;
+    padding-right: 185px;
+    margin-bottom: 17px;
   }
 }
 
@@ -100,6 +113,10 @@
     z-index: 2;
     margin-top: 0;
     margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -133,6 +150,11 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 16px;
   }
 }
 
@@ -160,7 +182,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
   }
 
 }
@@ -169,19 +191,25 @@
   display: flex;
   justify-content: center;
   grid-column: 1 / 3;
+  max-width: 280px;
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
     z-index: 2;
+    max-width: 560px;
+    padding-top: 41px;
+    padding-bottom: 93px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 4 / 5;
     grid-row: 1 / 5;
+    padding: 0;
   }
 }
 
-.example__summ {
+.example__total {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -192,6 +220,7 @@
   text-align: center;
   grid-column: 1 / 3;
   margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
@@ -208,5 +237,85 @@
     padding: 0;
     z-index: 2;
     margin: 0;
+  }
+}
+
+.example__summ {
+  @media (min-width:$desktop-width) {
+    margin-left: 62px;
+  }
+}
+.example__button {
+  position: absolute;
+  padding: 0;
+  border: none;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: currentColor;
+  color: #666666;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  @media(min-width:$tablet-width) {
+    height: 512px;
+  }
+
+  @media(min-width:$desktop-width) {
+    left:auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: " ";
+    mask: url("../img/stack.svg#slider-button");
+    background-color: currentColor;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    width: 24px;
+    height: 18px;
+
+  }
+
+  &::after {
+    position: absolute;
+    content:"";
+    width: 40px;
+    height: 40px;
+    border: 2px solid currentColor;
+    border-radius: 20px;
+    color: inherit;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.example__button:hover,
+.example__button:focus {
+  color: #68b738;
+
+  &::after {
+    color:  #68b738;
+  }
+}
+
+.example__button:active {
+  color: #5EAA2F;
+  opacity: 0.6;
+}
+
+.example__image {
+  overflow: hidden;
+  object-fit: none;
+
+  &--fat {
+  object-position: left;
+  }
+
+  &--slim {
+    object-position: right;
   }
 }
