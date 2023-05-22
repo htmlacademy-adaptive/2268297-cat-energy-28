@@ -1,5 +1,5 @@
 .copyright {
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 18px;
   }
 }
@@ -28,11 +28,10 @@
 .copyright__link:hover,
 .copyright__link:focus {
   &::after {
-  background-color: #68B738;
+    background-color: #68b738;
   }
 }
 
 .copyright__link:active {
   opacity: 0.3;
 }
-

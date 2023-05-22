@@ -6,12 +6,12 @@
   .main--index::before {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 694px;
-    background: url(../img/cat-desktop.jpg),#61a539;
+    background: url("../img/cat-desktop.jpg") #61a539;
     background-repeat: no-repeat;
     top: -2px;
     z-index: -2;
-    right: -50%;
+    left: calc(100vw / 2);
   }
 }

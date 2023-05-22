@@ -7,13 +7,13 @@
   box-sizing: border-box;
   align-items: center;
 
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 24px;
     padding-top: 15px;
     gap: 26px;
   }
 
-  @media(min-width:$desktop-width){
+  @media (min-width: $desktop-width) {
     padding-top: 21px;
     padding-left: 23px;
   }
@@ -28,7 +28,7 @@
     width: 28px;
     height: 22px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 27px;
       height: 17px;
     }
@@ -62,7 +62,7 @@
     width: 28px;
     height: 22px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 24px;
       height: 19px;
     }
@@ -78,7 +78,7 @@
     width: 28px;
     height: 22px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 20px;
       height: 17px;
       margin-left: 4px;
