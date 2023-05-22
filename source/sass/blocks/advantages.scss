@@ -1,5 +1,6 @@
 .advantages {
-  padding: 10px 21px 27px;
+  position: relative;
+  padding: 10px 21px 9px;
   max-width: $max-width-mobile;
   margin: 0 auto;
 
@@ -19,16 +20,17 @@
 }
 
 .advantages::after {
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    width: 100%;
-    left: 0;
+    width: 100vw;
+    bottom: 0;
+    left: calc((100% - 100vw) / 2);
     height: 1px;
     border-bottom: 1px solid #e6e6e6;
   }
 
-  @media(min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -47,7 +49,7 @@
     font-size: 60px;
     line-height: 100%;
     margin-top: 24px;
-    margin-bottom: 44px;;
+    margin-bottom: 44px;
   }
 }
 
@@ -83,7 +85,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    left: 0px;
+    left: 0;
     top: 30px;
   }
 }
@@ -117,21 +119,18 @@
 }
 
 .advantages__item::after {
-
   @media (min-width: $tablet-width) {
     position: absolute;
     content: counter(item);
     font-size: 280px;
     color: #f2f2f2;
-    font-family: 'Oswald';
-    font-size: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
     line-height: 100%;
     z-index: -1;
   }
 }
 
 .advantages__item--healthy::after {
-
   @media (min-width: $tablet-width) {
     top: -10px;
     right: 26px;
@@ -139,7 +138,6 @@
 }
 
 .advantages__item--powder::after {
-
   @media (min-width: $tablet-width) {
     top: -10px;
     right: 6px;
@@ -147,7 +145,6 @@
 }
 
 .advantages__item--meal::after {
-
   @media (min-width: $tablet-width) {
     top: -10px;
     right: 4px;
@@ -155,7 +152,6 @@
 }
 
 .advantages__item--month::after {
-
   @media (min-width: $tablet-width) {
     top: -10px;
     right: 2px;
